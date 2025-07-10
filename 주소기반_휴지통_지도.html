@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c9baf7223315ba3f960c575cff7a649d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c9baf7223315ba3f960c575cff7a649d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c9baf7223315ba3f960c575cff7a649d = L.map(
+                "map_c9baf7223315ba3f960c575cff7a649d",
+                {
+                    center: [37.5666791, 126.9782914],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_83248fa24b8a649cd992ef7f7aee2985 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_83248fa24b8a649cd992ef7f7aee2985.addTo(map_c9baf7223315ba3f960c575cff7a649d);
+        
+    
+            var marker_3cc71513f5b2f998e7eff208914f67a5 = L.marker(
+                [37.5666791, 126.9782914],
+                {
+}
+            ).addTo(map_c9baf7223315ba3f960c575cff7a649d);
+        
+    
+            var icon_8896dee63fe3d7ac6409fd7797caba71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21a9f1ab6ba0ae9036acec82db5c26c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a10816bb7897cdf3110f255b49c6d71b = $(`<div id="html_a10816bb7897cdf3110f255b49c6d71b" style="width: 100.0%; height: 100.0%;">내 위치 (입력 주소)</div>`)[0];
+                popup_21a9f1ab6ba0ae9036acec82db5c26c0.setContent(html_a10816bb7897cdf3110f255b49c6d71b);
+            
+        
+
+        marker_3cc71513f5b2f998e7eff208914f67a5.bindPopup(popup_21a9f1ab6ba0ae9036acec82db5c26c0)
+        ;
+
+        
+    
+    
+                marker_3cc71513f5b2f998e7eff208914f67a5.setIcon(icon_8896dee63fe3d7ac6409fd7797caba71);
+            
+    
+            var marker_f63c1c5f74b54fd86abf8b8bdbe5d0b4 = L.marker(
+                [37.55640071, 126.9565],
+                {
+}
+            ).addTo(map_c9baf7223315ba3f960c575cff7a649d);
+        
+    
+            var icon_86e822c0d10ed17c0496f2c026a6735c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "trash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb840e0c3e005132d4b224e9a6754214 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23becc9a00ee34e3d67395c99f61b2e1 = $(`<div id="html_23becc9a00ee34e3d67395c99f61b2e1" style="width: 100.0%; height: 100.0%;">아현역 3번 출구 버스정류장 앞(굴레방다리) (2237m)</div>`)[0];
+                popup_bb840e0c3e005132d4b224e9a6754214.setContent(html_23becc9a00ee34e3d67395c99f61b2e1);
+            
+        
+
+        marker_f63c1c5f74b54fd86abf8b8bdbe5d0b4.bindPopup(popup_bb840e0c3e005132d4b224e9a6754214)
+        ;
+
+        
+    
+    
+                marker_f63c1c5f74b54fd86abf8b8bdbe5d0b4.setIcon(icon_86e822c0d10ed17c0496f2c026a6735c);
+            
+    
+            var marker_31fe65cb16621fc300826e18d21b6d28 = L.marker(
+                [37.55640071, 126.9565],
+                {
+}
+            ).addTo(map_c9baf7223315ba3f960c575cff7a649d);
+        
+    
+            var icon_0c13db875e7b4217184e605154d6a70f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "trash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d94d9a49116c44fbbcb822f052f769e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fcf45605a299e3db8f9fe70a116e13f = $(`<div id="html_8fcf45605a299e3db8f9fe70a116e13f" style="width: 100.0%; height: 100.0%;">아현역 3번 출구 앞 (2237m)</div>`)[0];
+                popup_5d94d9a49116c44fbbcb822f052f769e.setContent(html_8fcf45605a299e3db8f9fe70a116e13f);
+            
+        
+
+        marker_31fe65cb16621fc300826e18d21b6d28.bindPopup(popup_5d94d9a49116c44fbbcb822f052f769e)
+        ;
+
+        
+    
+    
+                marker_31fe65cb16621fc300826e18d21b6d28.setIcon(icon_0c13db875e7b4217184e605154d6a70f);
+            
+    
+            var marker_21a6a186b7436548c9b089882f444d7c = L.marker(
+                [37.5548077, 126.9571319],
+                {
+}
+            ).addTo(map_c9baf7223315ba3f960c575cff7a649d);
+        
+    
+            var icon_36e1e5255355bad97fd436378f4aca1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "trash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c4ba2bee12134bb0da64a8e67116af0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d8ba9b3775344ada010cbd8c8cf32a0 = $(`<div id="html_5d8ba9b3775344ada010cbd8c8cf32a0" style="width: 100.0%; height: 100.0%;">마포대로 233-1 (아현초교 앞 횡단보도 앞) (2287m)</div>`)[0];
+                popup_3c4ba2bee12134bb0da64a8e67116af0.setContent(html_5d8ba9b3775344ada010cbd8c8cf32a0);
+            
+        
+
+        marker_21a6a186b7436548c9b089882f444d7c.bindPopup(popup_3c4ba2bee12134bb0da64a8e67116af0)
+        ;
+
+        
+    
+    
+                marker_21a6a186b7436548c9b089882f444d7c.setIcon(icon_36e1e5255355bad97fd436378f4aca1e);
+            
+</script>
+</html>
